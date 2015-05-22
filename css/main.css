@@ -146,7 +146,8 @@ a {
 
 .problem-choose .problem-form {
   background: #e7eaec;
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 15px; }
   .problem-choose .problem-form .form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -197,25 +198,29 @@ a {
     color: #676a6c;
     text-decoration: none;
     cursor: default; }
-.problem-choose .problem-list table tr.active td {
-  background: #fcf8e3; }
-.problem-choose .problem-list table tr td {
-  border-bottom: 1px solid #e7eaec;
-  vertical-align: middle; }
-  .problem-choose .problem-list table tr td .comment {
-    font-size: 30px;
-    color: #a7b1c2; }
-.problem-choose .problem-list table th {
-  border-bottom: 0; }
-.problem-choose .problem-list table th.plus {
-  width: 30px; }
-  .problem-choose .problem-list table th.plus button {
+.problem-choose .problem-list .collapse-panel {
+  padding: 5px;
+  margin-top: 15px; }
+  .problem-choose .problem-list .collapse-panel .fa-plus {
+    width: 30px;
     background: transparent;
     border: 0; }
-    .problem-choose .problem-list table th.plus button:focus {
+    .problem-choose .problem-list .collapse-panel .fa-plus:focus {
       outline: none; }
-.problem-choose .problem-list table th.importancy {
-  width: 130px; }
+.problem-choose .problem-list table {
+  margin-bottom: 0; }
+  .problem-choose .problem-list table tr.active td {
+    background: #fcf8e3; }
+  .problem-choose .problem-list table tr td {
+    border-bottom: 1px solid #e7eaec;
+    vertical-align: middle; }
+    .problem-choose .problem-list table tr td .comment {
+      font-size: 30px;
+      color: #a7b1c2; }
+  .problem-choose .problem-list table th {
+    border-bottom: 0; }
+  .problem-choose .problem-list table th.importancy {
+    width: 130px; }
 .problem-choose .date-table {
   padding: 10px; }
 
