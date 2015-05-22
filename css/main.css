@@ -144,85 +144,93 @@ a {
 .problems .time-table {
   padding: 10px; }
 
-.problem-choose .problem-form {
-  background: #e7eaec;
-  padding: 10px;
-  margin-bottom: 15px; }
-  .problem-choose .problem-form .form {
+.problem-choose {
+  margin-bottom: 30px; }
+  .problem-choose .problem-form {
+    background: #e7eaec;
+    padding: 10px;
+    margin-bottom: 15px; }
+    .problem-choose .problem-form .form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .problem-choose .problem-form .form > div {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto; }
+        .problem-choose .problem-form .form > div + div {
+          margin-left: 15px; }
+        .problem-choose .problem-form .form > div:first-child {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        .problem-choose .problem-form .form > div:last-child {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1 0 300px;
+              -ms-flex: 1 0 300px;
+                  flex: 1 0 300px; }
+      .problem-choose .problem-form .form input[type="checkbox"] {
+        vertical-align: top;
+        margin-right: 5px; }
+  .problem-choose .link-menu {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
-    .problem-choose .problem-form .form > div {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 0 auto;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto; }
-      .problem-choose .problem-form .form > div + div {
-        margin-left: 15px; }
-      .problem-choose .problem-form .form > div:first-child {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-      .problem-choose .problem-form .form > div:last-child {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 0 300px;
-            -ms-flex: 1 0 300px;
-                flex: 1 0 300px; }
-    .problem-choose .problem-form .form input[type="checkbox"] {
-      vertical-align: top;
-      margin-right: 5px; }
-.problem-choose .link-menu {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .problem-choose .link-menu a {
-    color: #a7b1c2;
-    padding: 5px 0;
-    display: block; }
-  .problem-choose .link-menu li.active a {
-    color: #676a6c;
-    text-decoration: none;
-    cursor: default; }
-.problem-choose .problem-list .collapse-panel {
-  padding: 5px;
-  margin-top: 15px; }
-  .problem-choose .problem-list .collapse-panel .fa-plus {
-    width: 30px;
-    background: transparent;
-    border: 0; }
-    .problem-choose .problem-list .collapse-panel .fa-plus:focus {
-      outline: none; }
-.problem-choose .problem-list table {
-  margin-bottom: 0; }
-  .problem-choose .problem-list table tr.active td {
-    background: #fcf8e3; }
-  .problem-choose .problem-list table tr td {
-    border-bottom: 1px solid #e7eaec;
-    vertical-align: middle; }
-    .problem-choose .problem-list table tr td .comment {
-      font-size: 30px;
-      color: #a7b1c2; }
-  .problem-choose .problem-list table th {
-    border-bottom: 0; }
-  .problem-choose .problem-list table th.importancy {
-    width: 130px; }
-.problem-choose .date-table {
-  padding: 10px; }
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .problem-choose .link-menu a {
+      color: #a7b1c2;
+      padding: 5px 0;
+      display: block; }
+    .problem-choose .link-menu li.active a {
+      color: #676a6c;
+      text-decoration: none;
+      cursor: default; }
+  .problem-choose .problem-list .collapse-panel {
+    padding: 5px;
+    margin-top: 15px; }
+    .problem-choose .problem-list .collapse-panel a {
+      display: block;
+      font-weight: 600;
+      color: #676a6c;
+      text-decoration: none; }
+    .problem-choose .problem-list .collapse-panel button {
+      padding: 0;
+      font-size: 13px; }
+      .problem-choose .problem-list .collapse-panel button:focus {
+        outline: none; }
+  .problem-choose .problem-list table {
+    margin-bottom: 0; }
+    .problem-choose .problem-list table tr.active td {
+      background: #fcf8e3; }
+    .problem-choose .problem-list table tr td {
+      border-bottom: 1px solid #e7eaec;
+      vertical-align: middle; }
+      .problem-choose .problem-list table tr td .comment {
+        font-size: 30px;
+        color: #a7b1c2; }
+    .problem-choose .problem-list table th {
+      border-bottom: 0; }
+    .problem-choose .problem-list table th.importancy {
+      width: 130px; }
+    .problem-choose .problem-list table .td-status {
+      font-style: italic; }
+  .problem-choose .date-table {
+    padding: 10px; }
 
 .modal .modal-header {
   text-align: left;
