@@ -2,6 +2,3 @@
 **/*.DS_Store
 Procfile
 node_modules
-sass
-gulpfile.js
-package.json
